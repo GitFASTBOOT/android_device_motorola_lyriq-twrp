@@ -9,6 +9,12 @@ on fs && property:ro.debuggable=0
     # distinguish USB shoulde connect or not, i.e. CDP vs SDP
     # set charging free due to it wait for USB activation
 
+# load touch modules
+on early-init
+    insmod /vendor/lib/modules/goodix_brl_mmi.ko
+    insmod /vendor/lib/modules/goodix_mtk_fod.ko
+    insmod /vendor/lib/modules/touchscreen_mmi.ko
+    
 on post-fs
     # Support A/B feature for EMMC and UFS boot region
     symlink /dev/block/sda /dev/block/mmcblk0boot0
