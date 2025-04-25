@@ -14,6 +14,7 @@ on early-init
     insmod /vendor/lib/modules/goodix_brl_mmi.ko
     insmod /vendor/lib/modules/goodix_mtk_fod.ko
     insmod /vendor/lib/modules/touchscreen_mmi.ko
+    insmod /vendor/lib/modules/mmi_relay.ko
     
 on post-fs
     # Support A/B feature for EMMC and UFS boot region
