@@ -163,3 +163,6 @@ BOARD_MAINTAINER_NAME := GITFASTBOOT
 TW_DEVICE_VERSION := $(BOARD_MAINTAINER_NAME)
 OF_MAINTAINER := $(BOARD_MAINTAINER_NAME)
 PB_MAIN_VERSION := $(BOARD_MAINTAINER_NAME)
+
+# Modules 
+TW_LOAD_VENDOR_MODULES := "goodix_brl_mmi.ko mmi_relay.ko touchscreen_mmi.ko goodix_mtk_fod.ko mmi_info.ko sensors_class.ko"
