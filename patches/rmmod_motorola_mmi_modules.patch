@@ -35,11 +35,12 @@ index e9ec46de1..7ff2a3db3 100644
 +    {
 +        std::string result;
 +        const char* modules[] = {
-+            "goodix_brl_mmi",
-+            "mmi_relay",
-+            "touchscreen_mmi",
-+            "goodix_mtk_fod",
++            "goodix_brl_u_mmi",
++            "goodix_fod_mmi_u",
++            "touchscreen_u_mmi",
++            "touch_boost",
 +            "mmi_info",
++            "mmi_relay",
 +            "sensors_class"
 +        };
 +

@@ -57,6 +57,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 
 TARGET_NO_KERNEL := true
 BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_RAMDISK_USE_LZ4 := true
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
@@ -67,9 +68,9 @@ BOARD_PAGE_SIZE := 4096
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_RAMDISK_OFFSET := 0x11088000
 BOARD_TAGS_OFFSET := 0x07c08000
-BOARD_BOOT_HEADER_VERSION := 3
-BOARD_HEADER_SIZE := 2112
-BOARD_DTB_SIZE := 211258
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_HEADER_SIZE := 2128
+BOARD_DTB_SIZE := 247309
 BOARD_DTB_OFFSET := 0x07c08000
 
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
@@ -165,5 +166,5 @@ OF_MAINTAINER := $(BOARD_MAINTAINER_NAME)
 PB_MAIN_VERSION := $(BOARD_MAINTAINER_NAME)
 
 # Modules 
-TW_LOAD_VENDOR_MODULES := "goodix_brl_mmi.ko mmi_relay.ko touchscreen_mmi.ko goodix_mtk_fod.ko mmi_info.ko sensors_class.ko"
+TW_LOAD_VENDOR_MODULES := "goodix_brl_u_mmi.ko mmi_relay.ko touchscreen_u_mmi.ko touch_boost.ko goodix_fod_mmi_u.ko mmi_info.ko sensors_class.ko"
 TW_MOTOROLA_TOUCH_RMMOD := true
