@@ -166,5 +166,5 @@ OF_MAINTAINER := $(BOARD_MAINTAINER_NAME)
 PB_MAIN_VERSION := $(BOARD_MAINTAINER_NAME)
 
 # Modules 
-TW_LOAD_VENDOR_MODULES := "goodix_brl_u_mmi.ko mmi_relay.ko touchscreen_u_mmi.ko touch_boost.ko goodix_fod_mmi_u.ko mmi_info.ko sensors_class.ko"
+TW_LOAD_VENDOR_MODULES := "c2k_usb_f_via_atc.ko c2k_usb_f_via_ets.ko c2k_usb_f_via_modem.ko c2k_usb.ko goodix_brl_u_mmi.ko goodix_fod_mmi_u.ko mmi_info.ko mmi_relay.ko moto_f_usbnet.ko mtk_usb_f_rndis.ko sensors_class.ko touch_boost.ko touchscreen_u_mmi.ko usb_boost.ko"
 TW_MOTOROLA_TOUCH_RMMOD := true
